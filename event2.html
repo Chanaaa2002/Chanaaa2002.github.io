@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Night Gala | LUXE VISTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&amp;family=Questrial&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/event2.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <a  href="index.html "> <img src="images/logo.png" alt="Logo" class="logo"> </a>
+        <a href="restaurant.html" class="btn">Back</a>
+    </div>
+
+    <main>
+        <div class="event">
+            <img src="images/event2/starry.jpg" alt="Starry Night Gala Main Image">
+            <h1>Starry Night Gala</h1>
+            <p>Join us as we celebrate under the stars with a night of sheer elegance, accompanied by the soulful melodies of live music and a culinary journey of gourmet dining. Our event promises to be a memorable soirée where you can savor exquisite flavors, sip on fine wines, and revel in the enchanting ambiance. Whether you're marking a special occasion or simply seeking a taste of luxury, this evening of refinement and entertainment is designed to create cherished memories beneath the celestial canopy.</p>
+            <img src="images/event2/gala.jpg" alt="Starry Night Gala Image">
+            <p>Date: August 15, 2023</p>
+            <p>Time: 7:00 PM - 12:00 AM</p>
+            <p>Location: Luxe Vista Rooftop Terrace</p>
+            <p>Dress Code: Black Tie</p>
+        </div>
+        <div class="booking">
+            <h2>Book Your Tickets</h2>
+            <form action="booking_process.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

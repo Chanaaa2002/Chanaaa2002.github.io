@@ -1,0 +1,161 @@
+-Provide the guest details, including title, first name, last name, country, address, email, and phone number.
+-Input a promo code for potential discounts during the booking process.
+-Choose a specific date or date range for the accommodation reservation.
+-Select the preferred room type and specify the number of rooms required.
+-Indicate the number of adults and children staying in the accommodation.
+-View available loyalty points associated with the booking.
+-Optionally, mark the accommodation as a favorite for quick reference and apply previous accommodation details.
+-Click the "Check Availability" button to confirm room availability for the specified criteria.
+-If the room is available, proceed to the next step by clicking the "Next" button.
+-In case the room is unavailable, explore other room options by adjusting the adventure activities.
+-Select adventure activities, including the date and time, for an exciting experience during the stay.
+-Specify the number of local adults, local children, foreign adults, and foreign children participating in the adventure.
+-Choose whether an adult guide or children's guide is needed for the activities.
+-Confirm the adventure booking by clicking the designated button.
+-Enter payment details for the booking transaction.
+-Upon successful payment, receive a confirmation message, and the booking details will be displayed.
+-Use the "Add to Favorite" button to save the accommodation details for future reference.
+
+
+
+
+
+ <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+
+        }
+
+
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Payment Methods */
+        .payment_methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .payment_method_type {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment_method_type input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Card Details */
+        .card_details {
+            margin-top: 20px;
+        }
+
+        .card_details_flex {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        /* .card_details_flex label {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .card_details_flex input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        } */
+
+        /* Button */
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        .card_details_flex label {
+            flex: 1;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .card_details_flex input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
